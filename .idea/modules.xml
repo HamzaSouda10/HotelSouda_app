@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Projects_spring.iml" filepath="$PROJECT_DIR$/.idea/Projects_spring.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Souda_Hotel.iml" filepath="$PROJECT_DIR$/.idea/Souda_Hotel.iml" />
+>>>>>>> 7a791a7 (just finish user entity and booking entity)
     </modules>
   </component>
 </project>
