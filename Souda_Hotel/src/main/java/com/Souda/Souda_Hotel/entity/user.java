@@ -19,15 +19,22 @@ public class user implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotBlank(message = "Email is requeired")
+    @NotBlank(message = "Email is required")
     @Column(unique = true)
     private String email;
-    @NotBlank(message = "Name is requeired")
+
+    @NotBlank(message = "Name is required")
     private String name;
-    @NotBlank(message = "Phone number is requeired")
+
+    @NotBlank(message = "Phone number is required")
     private String phoneNumber;
+
+    @NotBlank(message = "Password is required")
     private String password;
+
     private String role;
+
+    @OneToMany(mappedBy = "user" , fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Booking> bookings = new ArrayList<>();
 
 
